@@ -1,4 +1,4 @@
-: :root {
+:root {
     font-family: monospace;
     color: #333;
     background-color: #E9E9E9;
@@ -14,7 +14,7 @@
     border-bottom: 4px solid #333;
 }
 h3 {
-    font size: 22px;
+    font-size: 22px;
     font-weight: 800;
 }
 main {
@@ -72,7 +72,7 @@ main {
     font-weight: 800;
     text-decoration: none;
     text-transform: uppercase;
-    border-radius: ;
+    border-radius: 0rem;
     color: #333;
 }
 .btn:hover {
