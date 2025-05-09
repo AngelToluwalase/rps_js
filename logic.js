@@ -1,21 +1,21 @@
 function initPick() {
-    let init = "img/mystery.svg";
+    let init = "m_icon.jpg";
     document.getElementById('oppResult').src = init;
 }
 function rockPick() {
     function genPick() {
-        let pick = "img/mystery.svg"; 
+        let pick = "m_icon.jpg"; 
         if (Math.floor(Math.random() * 3) == 2) {
-            pick = "img/rock.svg"; 
+            pick = "r_icon.png"; 
         } else if (Math.floor(Math.random() * 3) == 1) {
-            pick = "img/paper.svg";
+            pick = "p_icon.png";
         } else {
-            pick = "img/scissors.svg";
+            pick = "s_icon.png";
         }
         document.getElementById('oppResult').src = pick;
-        if (pick == "img/rock.svg") {
+        if (pick == "r_icon.png") {
             document.getElementById('result').innerHTML = "It's a Tie";
-        } else if(pick == "img/paper.svg") {
+        } else if(pick == "p_icon.png") {
             document.getElementById('result').innerHTML = "You Lose";
         } else {
             document.getElementById('result').innerHTML = "You Win!";
@@ -25,39 +25,43 @@ function rockPick() {
 }
 function paperPick () {
     function genPick() {
-        let pick = "img/mystery.svg";
+        let pick = "m_icon.jpg";
         if (Math.floor(Math.random()* 3) == 2) {
-            pick = "img/rock.svg";
-        } else if (Math.floor(Math.random() * 3) == 1) {
-            pick = "img/paper.svg"; 
+            pick = "r_icon.png";
+        }
+    }
+        if (Math.floor(Math.random() * 3) == 1) {
+            pick = "p_icon.png"; 
     } else {
-        pick = "img/scissors.svg";
+        pick = "s_icon.png";
     }
     document.getElementById('oppResult').src = pick;
-    if (pick == "img/paper.svg") {
+    if (pick == "p_icon.png") {
         document.getElementById('result').innerHTML = "It's a Tie";
-    } else if (pick == "img/scissors.svg") {
+    } else if (pick == "s_icon.png") {
         document.getElementById('result').innerHTML= "You Lose";
     } else {
         document.getElementById('result').innerHTML = "You Win!";
     }
 } 
 genPick ();
-}
+
 function scissorsPick(){
     function genPick() {
-        let pick = "img/mystery.svg";
-        if (Math.floor(Math.random() * 3) == 2)
-            pick= "img.rock.svg";
-    } else if (Math.floor(Math.random() * 3) == 1) {
-        pick = "img/paper.svg";
+        let pick = "m_icon.jpg";
+        if (Math.floor(Math.random()) * 3 == 2) {
+            pick= "r_icon.png";
+        }
+    }
+    if (Math.floor(Math.random()) * 3 == 1) {
+        pick = "p_icon.png";
     } else {
-        pick = "img/scissors.svg";
+        pick = "s_icon.png";
     }
     document.getElementById('oppResult').src = pick;
-    if (pick == "img/scissors.svg") {
+    if (pick == "s_icon.png") {
         document.getElementById('result').innerHTML = "It's a Tie";
-    } else if (pick == "img/rocks.svg") {
+    } else if (pick == "r_icon.png") {
         document.getElementById('result').innerHTML = "You Lose";
     } else {
         document.getElementById('result').innerHTML = "You Win!";
